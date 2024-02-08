@@ -4,31 +4,132 @@
 }
 
 
+/* .body {
+    margin: 0 auto;
+    background-color: #020A18;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+} */
+
 .top {
     padding-bottom: 99px;
-    color: #020A18;
+    background-color: #020A18;
 }
 
 .header {
-    padding-top: 39px;
-    padding-bottom: 39px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 39px 0px 39px 0px;
+    gap: 32px;
+    border-radius: 10px;
+}
+
+.header__link {
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: none;
 }
 
 .top__content {
     margin-top: 160px;
     margin-bottom: 197px;
+    /* Автолейаут */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+}
+
+.top__info {
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .sub__title {
     margin-bottom: 10px;
+    color: rgb(58, 104, 184);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 .title {
     margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
-.text {}
+.text {
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.top__button {
+    position: static;
+    width: 604px;
+    height: 415px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* padding: 15px 30px 15px 30px; */
+    gap: 20px;
+}
 
 .button {
     margin-top: 50px;
+    border-radius: 5px;
+    /* #3A68B8 */
+    background: rgb(58, 104, 184);
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 30px 15px 30px;
+}
+
+.top__logos {
+    display: flex;
+    justify-content: center;
+    gap: 72px;
 }
